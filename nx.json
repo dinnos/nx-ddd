@@ -18,5 +18,12 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "shared-domain": {
+      "tags": []
+    },
+    "shared-infrastructure": {
+      "tags": []
+    }
+  }
 }

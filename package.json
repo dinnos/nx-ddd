@@ -26,15 +26,44 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "4.17.1",
+    "helmet": "^3.22.0",
+    "mongodb": "^3.5.7",
+    "node-dependency-injection": "^2.6.3",
+    "uuid": "^8.0.0",
+    "uuid-validate": "0.0.3",
+    "winston": "^3.2.1"
+  },
   "devDependencies": {
+    "@nrwl/eslint-plugin-nx": "9.2.4",
+    "@nrwl/express": "9.2.4",
+    "@nrwl/jest": "9.2.4",
+    "@nrwl/node": "9.2.4",
     "@nrwl/workspace": "9.2.4",
+    "@types/body-parser": "^1.19.0",
+    "@types/compression": "^1.7.0",
+    "@types/express": "4.17.0",
+    "@types/faker": "^4.1.11",
+    "@types/helmet": "0.0.46",
+    "@types/jest": "25.1.4",
+    "@types/mongodb": "^3.5.16",
     "@types/node": "~8.9.4",
+    "@types/uuid": "^7.0.3",
+    "@types/uuid-validate": "0.0.1",
+    "@typescript-eslint/eslint-plugin": "2.19.2",
+    "@typescript-eslint/parser": "2.19.2",
     "dotenv": "6.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.0.0",
+    "faker": "^4.1.0",
+    "jest": "25.2.3",
+    "prettier": "1.19.1",
+    "ts-jest": "25.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "eslint": "6.8.0",
-    "typescript": "~3.8.3",
-    "prettier": "1.19.1"
+    "typescript": "~3.8.3"
   }
 }

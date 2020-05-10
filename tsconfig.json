@@ -14,8 +14,14 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-ddd/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@nx-ddd/shared/infrastructure": [
+        "libs/shared/infrastructure/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

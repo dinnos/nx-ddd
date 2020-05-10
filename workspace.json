@@ -1,8 +1,65 @@
 {
   "version": 1,
-  "projects": {},
+  "projects": {
+    "shared-domain": {
+      "root": "libs/shared/domain",
+      "sourceRoot": "libs/shared/domain/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/shared/domain/.eslintrc",
+            "tsConfig": [
+              "libs/shared/domain/tsconfig.lib.json",
+              "libs/shared/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/domain/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/domain/jest.config.js",
+            "tsConfig": "libs/shared/domain/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "shared-infrastructure": {
+      "root": "libs/shared/infrastructure",
+      "sourceRoot": "libs/shared/infrastructure/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/shared/infrastructure/.eslintrc",
+            "tsConfig": [
+              "libs/shared/infrastructure/tsconfig.lib.json",
+              "libs/shared/infrastructure/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/infrastructure/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/infrastructure/jest.config.js",
+            "tsConfig": "libs/shared/infrastructure/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nrwl/express"
   },
   "schematics": {
     "@nrwl/workspace": {
@@ -59,5 +116,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "gestorsolar"
 }
